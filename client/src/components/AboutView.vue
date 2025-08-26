@@ -7,6 +7,8 @@
         :key="result.id"
         border-variant="primary"
         header-bg-variant="primary"
+        :bg-variant="result.isNight? 'dark':'white'"
+        :text-variant="result.isNight? 'white':'black'"
         header-text-variant="white"
         align="center"
         class="text-center mt-4 m-2"

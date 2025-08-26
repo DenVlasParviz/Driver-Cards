@@ -26,6 +26,7 @@
               required
             />
           </b-form-group>
+<b-form-checkbox id="Checkbox-1" v-model="stat" name="checkbox-1" > Виїзд в ночі</b-form-checkbox>
 
           <b-col class="mt-3 text-center">
             <b-button type="submit" variant="primary"> Підтвердити </b-button>
@@ -42,6 +43,7 @@ export default {
   data() {
     return {
       showOkAlert: false,
+      stat: false,
       form: {
         carNumber: null,
         driverName: "",
@@ -57,6 +59,7 @@ export default {
         driver_number: this.form.carNumber,
         driver_name: this.form.driverName,
         car_weight: this.form.carWeight,
+        isNight :this.stat,
       };
 
       try {
@@ -69,6 +72,7 @@ export default {
         this.form.carNumber = null;
         this.form.driverName = "";
         this.form.carWeight = null;
+        this.stat=false;
       } catch (error) {
         console.error("Помилка", error);
       }

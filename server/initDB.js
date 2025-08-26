@@ -15,6 +15,6 @@ async function initDb() {
     console.log("Таблиця створена");
   } catch (error) {
     console.log("Помилка:", error);
-    }
+  }
 }
-module.exports= initDb;
+module.exports = initDb;

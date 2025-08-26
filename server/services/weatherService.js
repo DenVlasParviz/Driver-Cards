@@ -2,7 +2,7 @@ const axios = require("axios");
 const GEO_URL = "https://geocoding-api.open-meteo.com/v1/search";
 const BASE_URL = "https://api.open-meteo.com/v1/forecast";
 
-//Отримання широти довготи за назвою міста
+
 async function getCoordinatesByCity(cityName) {
   const params = {
     name: cityName,
@@ -12,7 +12,7 @@ async function getCoordinatesByCity(cityName) {
   const { latitude, longitude, name } = resp.data.results[0];
   return { latitude, longitude, name };
 }
-// Отримання погодних даних завдяки широті довготі
+
 async function getWeather(latitude, longitude) {
   const params = {
     latitude,

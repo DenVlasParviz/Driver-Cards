@@ -1,4 +1,4 @@
-<!-- src/components/TestWeather.vue -->
+
 <template>
   <b-container class="mt-3">
     <h5 class="mt-3">Погода в {{ cityName }}</h5>

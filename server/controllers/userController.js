@@ -4,7 +4,7 @@ const weatherService = require("../services/weatherService");
 const city = "Вінниця";
 
 class DriverController {
-  // POST /api/info/card  (или /api/card, если без префикса info)
+  // POST /api/info/card
   async createDriver(req, res) {
     try {
       const { driver_number, driver_name, car_weight } = req.body;
