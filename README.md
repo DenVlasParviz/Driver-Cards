@@ -96,10 +96,8 @@ docker-compose up --build
 
 ### Auth
 - `POST /api/auth/register` — реєстрація  
-  Body: `{ "email", "password"}`  
 - `POST /api/auth/login` — логін  
-  Body: `{ "email", "password" }`  
-  Response: `{ "token": "<JWT>" }`
+
 
 ### Drivers
 - `GET /api/info/card` — список водіїв  
