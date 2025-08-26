@@ -48,21 +48,19 @@ WEATHER_API_KEY=your_weather_api_key
 ## Локальна інсталяція та запуск
 
 1. Встановити залежності:
+
+- Сервер:
 ```bash
-# сервер
 cd server
 npm install
-
-# клієнт
+```
+- Клієнт:
+```bash
 cd ../client
 npm install
 ```
 
-3. Налаштувати `.env` у папці `server/`.
-
-4. Застосувати міграції 
-
-5. Запустити сервіси:
+2. Запустити сервіси:
 - Сервер:
 ```bash
 cd server
@@ -95,20 +93,20 @@ docker-compose up --build
 Нижче наведені приклади;
 
 ### Auth
-- `POST /api/auth/register` — реєстрація  
-- `POST /api/auth/login` — логін  
+- `POST /api/auth/register` ‒ реєстрація  
+- `POST /api/auth/login` ‒ логін  
 
 
 ### Drivers
-- `GET /api/info/card` — список водіїв  
-- `GET /api/info/card/:id` — деталі водія  
-- `POST /api/info/card` — створити водія (Bearer token)  
+- `GET /api/info/card` ‒ список водіїв  
+- `GET /api/info/card/:id` ‒ деталі водія  
+- `POST /api/info/card` ‒ створити водія (Bearer token)  
 - `DELETE /api/info/card/:id` ‒ видалити (Bearer token)
 - `GET /api/driver-settings/:driverId` ‒ отримати налаштування (повертає { "isNight": true|false })
 - `POST /api/driver-settings/:driverId`  ‒ зберегти/оновити налаштування:
 
 ### Weather
-- `GET /api/weather?lat=<>&lon=<>` — повертає дані про погоду; якщо є кеш у Postgres ‒ повертає кеш.
+- `GET /api/weather?lat=<>&lon=<>` ‒ повертає дані про погоду; якщо є кеш у Postgres ‒ повертає кеш.
 
 ---
 
