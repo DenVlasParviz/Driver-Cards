@@ -111,7 +111,7 @@ docker-compose up --build
 - `POST /api/driver-settings/:driverId`  ‒ зберегти/оновити налаштування:
 
 ### Weather
-- `GET /api/weather?lat=<>&lon=<>` — повертає дані про погоду; якщо є кеш у Postgres і він не протермінований — повертає кеш.
+- `GET /api/weather?lat=<>&lon=<>` — повертає дані про погоду; якщо є кеш у Postgres ‒ повертає кеш.
 
 ---
 
